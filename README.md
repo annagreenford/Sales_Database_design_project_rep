@@ -2,7 +2,7 @@
 ## Background Scenario
 You have been hired by a small retail business that wants to streamline its operations by creating a new database system. This database will be used to manage inventory, sales, and customer information. The business is a small corner shop that sells a range of groceries and domestic products. They also have a loyalty program, which you will need to consider when deciding what tables to create.
 ## Response 
-### Understanding the Business Requirements:  
+### Understanding the Business Requirements:
 The relational database will need to store the following information:
 1. about the products sold
 2. the price they are sold at 
