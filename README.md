@@ -31,6 +31,7 @@ CREATE TABLE ‘products’ (
          ENGINE= InnoDB DEFAULT CHARSET= utf8mb4 
 ); 
 
+### Populating the Database:
 Examples of how to seed the Product table initially and linked Category table data: 
 
 INSERT INTO category_1 (category_name) 
