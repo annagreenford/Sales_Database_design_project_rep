@@ -21,11 +21,11 @@ In the ‘stock_1’ table, the initial stock levels in ‘product_stock_added�
 ### Implementing the Database:
 To create the database: 
 
-CREATE DATABASE ‘sales’ DEFAULT CHARACTERSET utf8mb4; 
+`CREATE DATABASE ‘sales’ DEFAULT CHARACTERSET utf8mb4; `
 
 The following type of SQL query should be used to create a new table using ‘products’ as an example: 
 
-USE ‘sales’; 
+`USE ‘sales’; 
 CREATE TABLE ‘products’ ( 
   ’product_id’ INT NOT NULL AUTO_INCREMENT,  
          ‘product_name’ VARCHAR(100) NOT NULL COMMENT "The Name of the product",  
@@ -36,12 +36,12 @@ CREATE TABLE ‘products’ (
         KEY ‘category_id’  (‘category_id’), 
         CONSTRAINT ‘should be specified’ FOREIGN KEY ‘category_id’ REFERENCES ‘category_1’ (‘category_id’) 
          ENGINE= InnoDB DEFAULT CHARSET= utf8mb4 
-); 
+); `
 
 ### Populating the Database:
 Examples of how to seed the Product table initially and linked Category table data: 
 
-INSERT INTO category_1 (category_name) 
+`INSERT INTO category_1 (category_name) 
 VALUES (“Snacks”) 
 INSERT INTO category_1 (category_name) 
 VALUES (“Healthy stuff”) 
@@ -49,7 +49,7 @@ INSERT INTO product_1 (product_name, product_description, standard_salesprice, c
 VALUES ("Crispy crisps", "Eat in moderation", 0.75, 1);  
 INSERT INTO product (product_name, product_description, standard_salesprice, category_id)  
 VALUES ("Brown rice", "Eat in more of this", 1.69, 2);  
-INSERT INTO category_1 (category_name) 
+INSERT INTO category_1 (category_name) `
 
 Snacks and Healthy stuff would automatically be allocated category_id of 1 and 2 respectively as the first two items to be entered into the category table.  The category _id of each item would need to be taken from the category table before entering this as a foreign key into the product table. 
 
