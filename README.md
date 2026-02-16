@@ -1,5 +1,5 @@
 # Sales_Database_design_project_rep
-## Background
+## Background Scenario
 You have been hired by a small retail business that wants to streamline its operations by creating a new database system. This database will be used to manage inventory, sales, and customer information. The business is a small corner shop that sells a range of groceries and domestic products. They also have a loyalty program, which you will need to consider when deciding what tables to create.
 ## Task
 Explain the steps you would take to set up and create this database.
