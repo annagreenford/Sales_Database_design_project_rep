@@ -47,3 +47,11 @@ INSERT INTO category_1 (category_name)
 Snacks and Healthy stuff would automatically be allocated category_id of 1 and 2 respectively as the first two items to be entered into the category table.  The category _id of each item would need to be taken from the category table before entering this as a foreign key into the product table. 
 
 Crispy Crisps and Brown rice would be allocated product_id 1 and 2 respectively as the first two items to be entered into the product table. 
+
+### Maintaing the Database:
+As the store manager I would check people new to the system (and all users initially), have their entries sense checked for an initial period.  I would anticipate errors in sales data could also be picked up by customers (assume the system auto generates sales invoices). 
+Customer details should be checked periodically by staff (particularly contact details) when speaking to customers and updated on the system directly. 
+Any new products being stocked need to be added to the list of products, and items no longer stocked updated to show ‘F’ in ‘current?’. 
+Stock should be reconciled on a regular basis with stock takes so the stock showing on the database reflects any shrinkage. 
+Permissions should be set up so that only authorised users can access the data by logging into the system and only specific people can make specific amendments to the database.  For instance the store manager may be able to revise stock levels in ‘stock_1’, but no other members of staff. 
+Back ups should be made daily at a minimum so that, should any major issues occur with the data, it can be rolled back to a version from within the last 24 hours at a minimum and only the latest sales/updates need to be reapplied to the data. 
